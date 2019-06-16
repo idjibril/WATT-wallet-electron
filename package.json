@@ -1,18 +1,18 @@
 {
-  "name": "walletshell",
-  "productName": "WalletShell",
-  "description": "TurtleCoin GUI Wallet",
+  "name": "watlet",
+  "productName": "Watlet",
+  "description": "WATT GUI Wallet",
   "version": "v0.3.11",
-  "homepage": "https://github.com/turtlecoin/turtle-wallet-electron",
-  "repository": "https://github.com/turtlecoin/turtle-wallet-electron",
+  "homepage": "https://github.com/idjibril/WATT-wallet-electron",
+  "repository": "https://github.com/idjibril/WATT-wallet-electron",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "debug": "electron . debug",
     "dev": "electron . dev",
-    "dist-win": "./node_modules/.bin/electron-builder --x64 --win -c.extraResources=./bin/win/turtle-service.exe",
-    "dist-lin": "./node_modules/.bin/electron-builder --x64 --linux -c.extraResources=./bin/lin/turtle-service",
-    "dist-mac": "./node_modules/.bin/electron-builder --x64 --mac -c.extraResources=./bin/osx/turtle-service"
+    "dist-win": "./node_modules/.bin/electron-builder --x64 --win -c.extraResources=./bin/win/watt-service.exe",
+    "dist-lin": "./node_modules/.bin/electron-builder --x64 --linux -c.extraResources=./bin/lin/watt-service",
+    "dist-mac": "./node_modules/.bin/electron-builder --x64 --mac -c.extraResources=./bin/osx/watt-service"
   },
   "keywords": [],
   "author": "Rixombea, Macroshock, TurtleCoin Developers",
@@ -37,8 +37,8 @@
     "request-promise-native": "^1.0.7"
   },
   "build": {
-    "appId": "lol.turtlecoin.walletshell",
-    "copyright": "Copyright (c) 2018 Rixombea, Macroshock, TurtleCoin Developers",
+    "appId": "cassh.watt.watlet",
+    "copyright": "Copyright (c) 2019 WATT Developers",
     "directories": {
       "output": "dist",
       "buildResources": "build"
@@ -68,14 +68,14 @@
       "target": [
         "AppImage"
       ],
-      "maintainer": "rixombea (@labaylabay)",
+      "maintainer": "izzo (@izzox)",
       "category": "Office",
-      "vendor": "TurtleCoin",
-      "synopsis": "TurtleCoin GUI Wallet"
+      "vendor": "WATT",
+      "synopsis": "WATT GUI Wallet"
     },
     "win": {
       "target": "nsis",
-      "publisherName": "TurtleCoin"
+      "publisherName": "WATT"
     },
     "nsis": {
       "artifactName": "${productName}-v${version}-${os}-${arch}-setup.${ext}",
