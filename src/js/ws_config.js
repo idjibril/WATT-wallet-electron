@@ -4,7 +4,7 @@ var config = {};
 config.appName = 'Watlet';
 config.appDescription = 'WATT Wallet';
 config.appSlogan = 'Nothing is lost, nothing is created, everything is transformed';
-config.appId = 'lcash.watt.wallet';
+config.appId = 'cash.watt.wallet';
 config.appGitRepo = 'https://github.com/idjibril/WATT-wallet-electron';
 
 // default port number for your daemon (e.g. TurtleCoind)
@@ -31,7 +31,7 @@ config.walletServiceRpcPort = 8070;
 config.blockExplorerUrl = 'https://explorer.watt.cash/transaction.html?hash=[[TX_HASH]]';
 
 // default remote node to connect to, set this to a known reliable node for 'just works' user experience
-config.remoteNodeDefaultHost = 'watt.co';
+config.remoteNodeDefaultHost = 'watt.cash';
 
 
 // remote node list update url, set to null if you don't have one
@@ -45,7 +45,7 @@ config.remoteNodeListFiltered = true;
 
 // fallback remote node list, in case fetching update failed, fill this with known to works remote nodes
 config.remoteNodeListFallback = [
-  'wattnode.co:11877',
+  'watt.cash:11877',
 ];
 config.remoteNodeCacheSupported = false;
 config.remoteNodeSslSupported = false;
